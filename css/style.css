@@ -109,14 +109,8 @@ a {
       border: 4px solid #000000;
       padding: 11px 0; }
       .main .chapters .chapters-content li {
-        list-style-type: none;
-        padding: 8px 24px;
-        font-size: 16px;
-        line-height: 24px; }
-        .main .chapters .chapters-content li:hover {
-          color: #FFFFFF;
-          background: #000; }
-        .main .chapters .chapters-content li:last-child::after {
+        list-style-type: none; }
+        .main .chapters .chapters-content li:last-child a::after {
           content: 'NEW';
           font-size: 14px;
           color: #000000;
@@ -124,3 +118,14 @@ a {
           padding: 2px 12px;
           margin-left: 16px;
           background: #50FF44; }
+        .main .chapters .chapters-content li a {
+          display: block;
+          padding: 8px 24px;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000;
+          text-decoration: none; }
+          .main .chapters .chapters-content li a:hover {
+            text-decoration: none;
+            color: #FFFFFF;
+            background: #000; }
