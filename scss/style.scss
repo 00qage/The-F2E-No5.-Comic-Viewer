@@ -1,0 +1,108 @@
+// @import 'grid';
+@import 'reset';
+// @import 'normalize';
+.wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    background: #000;
+    text-align: center;
+    font-family: Roboto Black;
+    font-style: italic;
+    font-size: 36px;
+    padding: 16px 0;
+    color: #50FF44;
+}
+
+.main {
+    // padding: 24px 0;
+    background: #F2F2F2;
+    text-align: center;
+    .ad {
+        padding: 24px 0;
+    }
+    .main-content {
+        width: 620px;
+        margin: 0 auto;
+        .main-img {
+            width: 300px; // background: #FFFFFF;
+            border: 4px solid #000000;
+            img {
+                width: 100%;
+            }
+        }
+        .introduction {
+            text-align-last: left;
+            font-family: Roboto Regular;
+            font-size: 16px;
+            color: #000000;
+            line-height: 24px;
+            .comic-title {
+                font-family: Roboto;
+                font-weight: bold;
+                font-size: 36px;
+                color: #FFFFFF;
+                line-height: 36px;
+                background: #000000;
+                padding: 8px 24px;
+            }
+            .subtitle {
+                font-weight: bold;
+            }
+            .value {
+                margin-left: 20px;
+            }
+            .introduction-content {
+                margin: 10px 0 0 20px;
+            }
+            .introduction-summary {
+                margin-left: 20px;
+                width: 300px;
+                text-align: initial;
+            }
+        }
+    }
+    .chapters {
+        width: 620px;
+        margin: 0 auto;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: left;
+        .chapters-title {
+            display: inline-block;
+            color: #FFFFFF;
+            padding: 8px 24px;
+            background: #000;
+        }
+        .chapters-content {
+            background: #FFFFFF;
+            border: 4px solid #000000;
+            padding: 11px 0;
+            li {
+                list-style-type: none;
+                padding: 8px 24px;
+                font-size: 16px;
+                line-height: 24px;
+                &:hover {
+                    color: #FFFFFF;
+                    background: #000;
+                }
+                &:last-child{
+                    &::after {
+                        content: 'NEW' ;
+                        font-size: 14px;
+                        color: #000000;
+                        line-height: 14px;
+                        padding: 2px 12px;
+                        margin-left: 16px;
+                        background: #50FF44;
+                    }
+                }
+            }
+        }
+    }
+}
